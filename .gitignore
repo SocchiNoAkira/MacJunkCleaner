@@ -1,0 +1,21 @@
+# 构建产物
+bin/
+obj/
+publish/
+artifacts/
+
+# Visual Studio / Rider 本地状态
+.vs/
+.idea/
+*.user
+*.suo
+*.csproj.user
+
+# 本地测试工程
+tests/
+
+# 运行时与临时文件
+*.log
+*.tmp
+TestResults/
+ui.png
