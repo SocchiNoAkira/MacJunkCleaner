@@ -29,9 +29,10 @@
 
 ## 构建与运行
 
+环境要求：Windows + .NET 9 SDK。
+
 ```powershell
 dotnet build
-dotnet test
 dotnet publish src\MacJunkCleaner.App\MacJunkCleaner.App.csproj -c Release -o publish
 ```
 
@@ -52,7 +53,6 @@ Start-Process .\publish\MacJunkCleaner.exe -ArgumentList '--screenshot','ui.png'
 ## 项目结构
 
 ```
-src/MacJunkCleaner.Core/   判定器、扫描器、删除引擎、日志、报告（纯逻辑，可单测）
+src/MacJunkCleaner.Core/   判定器、扫描器、删除引擎、日志、报告（纯逻辑，不依赖 UI）
 src/MacJunkCleaner.App/    WinForms 界面
-tests/MacJunkCleaner.Core.Tests/
 ```
